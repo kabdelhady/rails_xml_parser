@@ -3,6 +3,11 @@ class ParserGenerator < Rails::Generators::Base
 
 
   def generate_model
+    `rm -rf "#{Rails.root}/app/models"`
+    `rm -rf "#{Rails.root}/db/migrate"`
+    `rm -rf "#{Rails.root}/lib/seeds"`
+    `rm -rf "#{Rails.root}/test"`
+    
     doc = Nokogiri::XML(File.open('lib/data/all.xml'))
     entites = doc.xpath('//entity')
     @models = []
@@ -16,9 +21,10 @@ class ParserGenerator < Rails::Generators::Base
       @attributes[model_name] = {}
       fields.each do |field|
         
-
         field['name'] = field['name'].underscore
-
+        
+        next if field['name'].underscore == "#{model_name.underscore}_id"
+        
         field['type'] = field['type'].include?('text') ? 'text' : field['type']
         field['type'] = field['type'] == 'date-time' ? 'datetime' : field['type']
         field['type'] = field['type'].include?('id') ? 'integer' : field['type']
@@ -53,7 +59,9 @@ class ParserGenerator < Rails::Generators::Base
 
 
     end
-    template 'seeds/seeds_generator.rb', 'lib/seeds.rb'
-
+    @models.each do |model| 
+      @model = model
+      template 'seeds/seeds_generator.rb', "lib/seeds/#{model.underscore}.rb"
+    end
   end
 end

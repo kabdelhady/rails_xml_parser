@@ -1,7 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  job_requisition_id: 1
   duration_months: 1
   age: 1
   gender: MyText
@@ -17,7 +16,6 @@ one:
   required_on_date: 2012-11-27
 
 two:
-  job_requisition_id: 1
   duration_months: 1
   age: 1
   gender: MyText

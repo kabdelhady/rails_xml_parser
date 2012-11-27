@@ -1,7 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  job_interview_id: 1
   job_requisition_id: 1
   candidate_party_id: 1
   interviewer_party_id: 1
@@ -11,7 +10,6 @@ one:
   job_interview_date: 2012-11-27
 
 two:
-  job_interview_id: 1
   job_requisition_id: 1
   candidate_party_id: 1
   interviewer_party_id: 1
