@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  facility_id: 1
+  location_seq_id: 1
+  location_type_enum_id: 1
+  area_id: 1
+  aisle_id: 1
+  section_id: 1
+  level_id: 1
+  position_id: 1
+  geo_point_id: 1
+
+two:
+  facility_id: 1
+  location_seq_id: 1
+  location_type_enum_id: 1
+  area_id: 1
+  aisle_id: 1
+  section_id: 1
+  level_id: 1
+  position_id: 1
+  geo_point_id: 1

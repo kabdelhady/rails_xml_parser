@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  party_id: 1
+  training_class_id: 1
+  from_date: 2012-11-27 11:15:32
+  thru_date: 2012-11-27 11:15:32
+  work_effort_id: 1
+  approver_party_id: 1
+  training_approved: MyText
+  reason: MyText
+
+two:
+  party_id: 1
+  training_class_id: 1
+  from_date: 2012-11-27 11:15:32
+  thru_date: 2012-11-27 11:15:32
+  work_effort_id: 1
+  approver_party_id: 1
+  training_approved: MyText
+  reason: MyText

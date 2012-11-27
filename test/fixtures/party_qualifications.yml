@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  party_id: 1
+  qualification_type_enum_id: 1
+  from_date: 2012-11-27 11:15:32
+  thru_date: 2012-11-27 11:15:32
+  description: MyText
+  title: MyText
+  status_id: 1
+  verification_status_id: 1
+
+two:
+  party_id: 1
+  qualification_type_enum_id: 1
+  from_date: 2012-11-27 11:15:32
+  thru_date: 2012-11-27 11:15:32
+  description: MyText
+  title: MyText
+  status_id: 1
+  verification_status_id: 1

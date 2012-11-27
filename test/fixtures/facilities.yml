@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  facility_id: 1
+  facility_type_enum_id: 1
+  parent_facility_id: 1
+  owner_party_id: 1
+  facility_name: MyText
+  facility_size: 9.99
+  facility_size_uom_id: 1
+  opened_date: 2012-11-27 11:15:33
+  closed_date: 2012-11-27 11:15:33
+  description: MyText
+  geo_point_id: 1
+  default_days_to_ship: 1
+
+two:
+  facility_id: 1
+  facility_type_enum_id: 1
+  parent_facility_id: 1
+  owner_party_id: 1
+  facility_name: MyText
+  facility_size: 9.99
+  facility_size_uom_id: 1
+  opened_date: 2012-11-27 11:15:33
+  closed_date: 2012-11-27 11:15:33
+  description: MyText
+  geo_point_id: 1
+  default_days_to_ship: 1

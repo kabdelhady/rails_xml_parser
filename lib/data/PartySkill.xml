@@ -1,0 +1,12 @@
+<entity entity-name="PartySkill" package-name="mantle.humanres.ability">
+        <field name="partyId" type="id" is-pk="true"/>
+        <field name="skillTypeEnumId" type="id" is-pk="true"/>
+        <field name="yearsExperience" type="number-integer"/>
+        <field name="rating" type="number-integer"/>
+        <field name="skillLevel" type="number-integer"/>
+        <field name="startedUsingDate" type="date-time"/>
+        <relationship type="one" related-entity-name="Party"/>
+        <relationship type="one" title="SkillType" related-entity-name="moqui.basic.Enumeration">
+            <key-map field-name="skillTypeEnumId"/>
+        </relationship>
+    </entity>

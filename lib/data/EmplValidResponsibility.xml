@@ -1,0 +1,13 @@
+<entity entity-name="EmplValidResponsibility" package-name="mantle.humanres.position">
+        <field name="emplPositionTypeEnumId" type="id" is-pk="true"/>
+        <field name="responsibilityEnumId" type="id" is-pk="true"/>
+        <field name="fromDate" type="date-time" is-pk="true"/>
+        <field name="thruDate" type="date-time"/>
+        <field name="comments" type="text-medium"/>
+        <relationship type="one" title="EmplPositionType" related-entity-name="moqui.basic.Enumeration">
+            <key-map field-name="emplPositionTypeEnumId"/>
+        </relationship>
+        <relationship type="one" title="EmploymentResponsibility" related-entity-name="moqui.basic.Enumeration">
+            <key-map field-name="responsibilityEnumId"/>
+        </relationship>
+    </entity>

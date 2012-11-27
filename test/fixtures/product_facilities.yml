@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  product_id: 1
+  facility_id: 1
+  minimum_stock: 9.99
+  reorder_quantity: 9.99
+  days_to_ship: 1
+
+two:
+  product_id: 1
+  facility_id: 1
+  minimum_stock: 9.99
+  reorder_quantity: 9.99
+  days_to_ship: 1

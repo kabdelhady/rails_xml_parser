@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  empl_position_id: 1
+  party_id: 1
+  role_type_id: 1
+  from_date: 2012-11-27 11:15:33
+  thru_date: 2012-11-27 11:15:33
+  comments: MyText
+
+two:
+  empl_position_id: 1
+  party_id: 1
+  role_type_id: 1
+  from_date: 2012-11-27 11:15:33
+  thru_date: 2012-11-27 11:15:33
+  comments: MyText

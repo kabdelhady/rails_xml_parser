@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  resume_id: 1
+  party_id: 1
+  content_location: MyText
+  resume_date: 2012-11-27 11:15:32
+  resume_text: MyText
+
+two:
+  resume_id: 1
+  party_id: 1
+  content_location: MyText
+  resume_date: 2012-11-27 11:15:32
+  resume_text: MyText

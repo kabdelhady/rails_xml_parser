@@ -1,0 +1,37 @@
+<entity entity-name="JobRequisition" package-name="mantle.humanres.recruitment">
+        <field name="jobRequisitionId" type="id" is-pk="true"/>
+        <field name="durationMonths" type="number-integer"/>
+        <field name="age" type="number-integer"/>
+        <field name="gender" type="text-indicator"/>
+        <field name="experienceMonths" type="number-integer"/>
+        <field name="experienceYears" type="number-integer"/>
+        <field name="qualification" type="id-long"/>
+        <field name="jobLocationFacilityId" type="id"/>
+        <field name="skillTypeEnumId" type="id"/>
+        <field name="noOfResources" type="number-integer"/>
+        <field name="jobPostingTypeEnumId" type="id"/>
+        <field name="jobRequisitionDate" type="date"/>
+        <field name="examTypeEnumId" type="id"/>
+        <field name="requiredOnDate" type="date"/>
+        <relationship type="one" title="SkillType" related-entity-name="moqui.basic.Enumeration">
+            <key-map field-name="skillTypeEnumId"/>
+        </relationship>
+        <relationship type="one" title="ExamType" related-entity-name="moqui.basic.Enumeration">
+            <key-map field-name="examTypeEnumId"/>
+        </relationship>
+        <relationship type="one" title="JobPostingType" related-entity-name="moqui.basic.Enumeration">
+            <key-map field-name="jobPostingTypeEnumId"/>
+        </relationship>
+        <seed-data>
+            <!-- Exam Type -->
+            <moqui.basic.EnumerationType description="Exam Type" enumTypeId="ExamType"/>
+            <moqui.basic.Enumeration description="Written Aptitude Exam" enumId="EXAM_WRITTEN_APT" enumTypeId="ExamType"/>
+            <moqui.basic.Enumeration description="Technical Exam" enumId="EXAM_TECHNICAL" enumTypeId="ExamType"/>
+            <moqui.basic.Enumeration description="Group Discussion" enumId="EXAM_GROUP_DISCN" enumTypeId="ExamType"/>
+
+            <!-- Job Posting Type -->
+            <moqui.basic.EnumerationType description="Job Posting Type" enumTypeId="JobPostingType"/>
+            <moqui.basic.Enumeration description="Internal Job Posting" enumId="JobPostingType_INTR" enumTypeId="JobPostingType"/>
+            <moqui.basic.Enumeration description="External Job Posting" enumId="JobPostingType_EXTR" enumTypeId="JobPostingType"/>
+        </seed-data>
+    </entity>

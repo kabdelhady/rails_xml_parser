@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  training_class_id: 1
+  training_class_type_enum_id: 1
+  description: MyText
+
+two:
+  training_class_id: 1
+  training_class_type_enum_id: 1
+  description: MyText

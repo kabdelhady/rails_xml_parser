@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  employment_id: 1
+  benefit_type_id: 1
+  from_date: 2012-11-27 11:15:33
+  thru_date: 2012-11-27 11:15:33
+  cost: 9.99
+  actual_employer_paid_percent: 1.5
+  available_time: 1
+
+two:
+  employment_id: 1
+  benefit_type_id: 1
+  from_date: 2012-11-27 11:15:33
+  thru_date: 2012-11-27 11:15:33
+  cost: 9.99
+  actual_employer_paid_percent: 1.5
+  available_time: 1

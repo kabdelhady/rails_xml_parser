@@ -1,0 +1,18 @@
+<entity entity-name="PerformanceReview" package-name="mantle.humanres.ability">
+        <field name="performanceReviewId" type="id" is-pk="true"/>
+        <field name="employeePartyId" type="id"/>
+        <field name="managerPartyId" type="id"/>
+        <field name="paymentId" type="id"/>
+        <field name="emplPositionId" type="id"/>
+        <field name="fromDate" type="date-time"/>
+        <field name="thruDate" type="date-time"/>
+        <field name="comments" type="text-medium"/>
+        <relationship type="one" title="Employee" related-entity-name="Party">
+            <key-map field-name="employeePartyId"/>
+        </relationship>
+        <relationship type="one" title="Manager" related-entity-name="Party">
+            <key-map field-name="managerPartyId"/>
+        </relationship>
+        <relationship type="one" related-entity-name="Payment"/>
+        <relationship type="one" related-entity-name="EmplPosition"/>
+    </entity>

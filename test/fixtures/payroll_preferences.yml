@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  employment_id: 1
+  from_date: 2012-11-27 11:15:33
+  thru_date: 2012-11-27 11:15:33
+  percentage: 1.5
+  flat_amount: 9.99
+  deduction_type_enum_id: 1
+  time_period_type_id: 1
+  payment_method_type_enum_id: 1
+  payment_method_id: 1
+
+two:
+  employment_id: 1
+  from_date: 2012-11-27 11:15:33
+  thru_date: 2012-11-27 11:15:33
+  percentage: 1.5
+  flat_amount: 9.99
+  deduction_type_enum_id: 1
+  time_period_type_id: 1
+  payment_method_type_enum_id: 1
+  payment_method_id: 1

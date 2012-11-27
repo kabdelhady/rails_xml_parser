@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  empl_position_class_id: 1
+  title: MyText
+  description: MyText
+
+two:
+  empl_position_class_id: 1
+  title: MyText
+  description: MyText

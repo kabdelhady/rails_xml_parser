@@ -1,0 +1,38 @@
+<entity entity-name="JobInterview" package-name="mantle.humanres.recruitment">
+        <field name="jobInterviewId" type="id" is-pk="true"/>
+        <field name="jobRequisitionId" type="id"/>
+        <field name="candidatePartyId" type="id"/>
+        <field name="interviewerPartyId" type="id"/>
+        <field name="jobInterviewTypeEnumId" type="id"/>
+        <field name="interviewGradeEnumId" type="id"/>
+        <field name="jobInterviewResult" type="id"/>
+        <field name="jobInterviewDate" type="date"/>
+        <relationship type="one" related-entity-name="JobRequisition"/>
+        <relationship type="one" title="Candidate" related-entity-name="Party">
+            <key-map field-name="candidatePartyId"/>
+        </relationship>
+        <relationship type="one" title="Interviewer" related-entity-name="Party">
+            <key-map field-name="interviewerPartyId"/>
+        </relationship>
+        <relationship type="one" title="JobInterviewType" related-entity-name="moqui.basic.Enumeration">
+            <key-map field-name="jobInterviewTypeEnumId"/>
+        </relationship>
+        <relationship type="one" title="InterviewGrade" related-entity-name="moqui.basic.Enumeration">
+            <key-map field-name="interviewGradeEnumId"/>
+        </relationship>
+        <seed-data>
+            <!-- Job Interview Type -->
+            <moqui.basic.EnumerationType description="Job Interview Type" enumTypeId="JobInterviewType"/>
+            <moqui.basic.Enumeration enumId="JOB_INTERVW" description="Hire - It is a process in which an employee is evaluated by an employer for prospective employment in their company" enumTypeId="JobInterviewType"/>
+            <moqui.basic.Enumeration enumId="EXIT_INTERVW" description="Exit - It is conducted by an employer of a departing employee" enumTypeId="JobInterviewType"/>
+            <moqui.basic.Enumeration enumId="INFORMAL_INTERVW" description="Informal - It is a meeting in which a job seeker asks for advice rather than employment" enumTypeId="JobInterviewType"/>
+            <moqui.basic.Enumeration enumId="CASE_INTERVW" description="Case - It is an interview in which the applicant is given a question/situation and asked to resolve it" enumTypeId="JobInterviewType"/>
+
+            <!-- Interview Grade -->
+            <moqui.basic.EnumerationType description="Interview Grade" enumTypeId="InterviewGrade"/>
+            <moqui.basic.Enumeration description="A (above 75%)" enumId="InterviewGrade_A" sequenceNum="1" enumTypeId="InterviewGrade"/>
+            <moqui.basic.Enumeration description="B (60-75%)" enumId="InterviewGrade_B" sequenceNum="2" enumTypeId="InterviewGrade"/>
+            <moqui.basic.Enumeration description="C (45-60%)" enumId="InterviewGrade_C" sequenceNum="3" enumTypeId="InterviewGrade"/>
+            <moqui.basic.Enumeration description="D (below 40%)" enumId="InterviewGrade_D" sequenceNum="4" enumTypeId="InterviewGrade"/>
+        </seed-data>
+    </entity>

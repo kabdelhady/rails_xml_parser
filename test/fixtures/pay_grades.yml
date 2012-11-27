@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pay_grade_id: 1
+  pay_grade_name: MyText
+  comments: MyText
+
+two:
+  pay_grade_id: 1
+  pay_grade_name: MyText
+  comments: MyText

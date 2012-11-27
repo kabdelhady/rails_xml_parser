@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  employment_id: 1
+  empl_position_id: 1
+  employer_party_id: 1
+  employee_party_id: 1
+  from_date: 2012-11-27 11:15:33
+  thru_date: 2012-11-27 11:15:33
+  termination_reason_enum_id: 1
+  termination_type_enum_id: 1
+
+two:
+  employment_id: 1
+  empl_position_id: 1
+  employer_party_id: 1
+  employee_party_id: 1
+  from_date: 2012-11-27 11:15:33
+  thru_date: 2012-11-27 11:15:33
+  termination_reason_enum_id: 1
+  termination_type_enum_id: 1

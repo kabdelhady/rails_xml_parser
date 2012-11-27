@@ -1,0 +1,8 @@
+<entity entity-name="PartyResume" package-name="mantle.humanres.ability">
+        <field name="resumeId" type="id" is-pk="true"/>
+        <field name="partyId" type="id"/>
+        <field name="contentLocation" type="text-medium"/>
+        <field name="resumeDate" type="date-time"/>
+        <field name="resumeText" type="text-very-long"/>
+        <relationship type="one" related-entity-name="Party"/>
+    </entity>

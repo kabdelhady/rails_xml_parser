@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  unemployment_claim_id: 1
+  unemployment_claim_date: 2012-11-27 11:15:33
+  employment_id: 1
+  status_id: 1
+  description: MyText
+  from_date: 2012-11-27 11:15:33
+  thru_date: 2012-11-27 11:15:33
+
+two:
+  unemployment_claim_id: 1
+  unemployment_claim_date: 2012-11-27 11:15:33
+  employment_id: 1
+  status_id: 1
+  description: MyText
+  from_date: 2012-11-27 11:15:33
+  thru_date: 2012-11-27 11:15:33

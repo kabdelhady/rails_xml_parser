@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  employee_party_id: 1
+  note_date: 2012-11-27 11:15:32
+  note_text: MyText
+
+two:
+  employee_party_id: 1
+  note_date: 2012-11-27 11:15:32
+  note_text: MyText

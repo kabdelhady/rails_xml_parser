@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  party_id: 1
+  from_date: 2012-11-27
+  thru_date: 2012-11-27
+  leave_type_enum_id: 1
+  leave_reason_enum_id: 1
+  leave_approved: MyText
+  approver_party_id: 1
+  description: MyText
+
+two:
+  party_id: 1
+  from_date: 2012-11-27
+  thru_date: 2012-11-27
+  leave_type_enum_id: 1
+  leave_reason_enum_id: 1
+  leave_approved: MyText
+  approver_party_id: 1
+  description: MyText

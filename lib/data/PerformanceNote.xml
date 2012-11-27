@@ -1,0 +1,8 @@
+ <entity entity-name="PerformanceNote" package-name="mantle.humanres.ability">
+        <field name="employeePartyId" type="id" is-pk="true"/>
+        <field name="noteDate" type="date-time" is-pk="true"/>
+        <field name="noteText" type="text-very-long"/>
+        <relationship type="one" title="Employee" related-entity-name="Party">
+            <key-map field-name="employeePartyId"/>
+        </relationship>
+    </entity>

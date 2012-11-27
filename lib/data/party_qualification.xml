@@ -1,0 +1,43 @@
+<entity entity-name="PartyQualification" package-name="mantle.humanres.ability">
+        <field name="partyId" type="id" is-pk="true"/>
+        <field name="qualificationTypeEnumId" type="id" is-pk="true"/>
+        <field name="fromDate" type="date-time" is-pk="true"/>
+        <field name="thruDate" type="date-time"/>
+        <field name="description" type="text-medium"/>
+        <field name="title" type="text-medium"><description>Title of degree or job</description></field>
+        <field name="statusId" type="id"><description>Status e.g. completed, part-time etc.</description></field>
+        <field name="verificationStatusId" type="id"/>
+        <relationship type="one" related-entity-name="Party"/>
+        <relationship type="one" title="QualificationType" related-entity-name="moqui.basic.Enumeration">
+            <key-map field-name="qualificationTypeEnumId"/>
+        </relationship>
+        <relationship type="one" title="PartyQualification" related-entity-name="moqui.basic.StatusItem"/>
+        <relationship type="one" title="PartyQualificationVerification" related-entity-name="moqui.basic.StatusItem">
+            <key-map field-name="verificationStatusId"/>
+        </relationship>
+        <seed-data>
+            <!-- Qualification Type -->
+            <moqui.basic.EnumerationType description="Qualification Type" enumTypeId="QualificationType"/>
+            <moqui.basic.Enumeration enumId="DEGREE" description="Degree" enumTypeId="QualificationType"/>
+            <moqui.basic.Enumeration enumId="CERTIFICATION" description="Certification" enumTypeId="QualificationType"/>
+            <moqui.basic.Enumeration enumId="EXPERIENCE" description="Work experience" enumTypeId="QualificationType"/>
+            <moqui.basic.Enumeration enumId="B.Tech" parentEnumId="DEGREE" description="Bachelor of Technology" enumTypeId="QualificationType"/>
+            <moqui.basic.Enumeration enumId="MBA" parentEnumId="DEGREE" description="Masters of business administration" enumTypeId="QualificationType"/>
+            <moqui.basic.Enumeration enumId="MSC" parentEnumId="DEGREE" description="Masters of Science" enumTypeId="QualificationType"/>
+            <moqui.basic.Enumeration enumId="BSC" parentEnumId="DEGREE" description="Bachelor of Science" enumTypeId="QualificationType"/>
+
+            <!-- Party Qualification Status -->
+            <moqui.basic.StatusType description="Party Qualification Status" statusTypeId="PartyQualification"/>
+            <moqui.basic.StatusItem description="Completed" sequenceNum="11" statusId="HR_DS_COMPLETE" statusTypeId="PartyQualification"/>
+            <moqui.basic.StatusItem description="Incomplete" sequenceNum="12" statusId="HR_DS_INCOMPLETE" statusTypeId="PartyQualification"/>
+            <moqui.basic.StatusItem description="Deferred" sequenceNum="13" statusId="HR_DS_DEFERRED" statusTypeId="PartyQualification"/>
+            <moqui.basic.StatusItem description="Full time" sequenceNum="21" statusId="HR_JS_FULLTIME" statusTypeId="PartyQualification"/>
+            <moqui.basic.StatusItem description="Part time" sequenceNum="22" statusId="HR_JS_PARTTIME" statusTypeId="PartyQualification"/>
+            <moqui.basic.StatusItem description="Contractor" sequenceNum="23" statusId="HR_JS_CONTRACTOR" statusTypeId="PartyQualification"/>
+
+            <!-- Party Qualification Verification Status -->
+            <moqui.basic.StatusType description="Party Qualification Verification Status" statusTypeId="PartyQualificationVerification"/>
+            <moqui.basic.StatusItem description="Not verified" sequenceNum="1" statusId="PQV_NOT_VERIFIED" statusTypeId="PartyQualificationVerification"/>
+            <moqui.basic.StatusItem description="Verified" sequenceNum="2" statusId="PQV_VERIFIED" statusTypeId="PartyQualificationVerification"/>
+        </seed-data>
+    </entity>

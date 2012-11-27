@@ -1,0 +1,12 @@
+<entity entity-name="EmplPositionParty" package-name="mantle.humanres.position">
+        <!-- for manager, department/etc internal organization, etc -->
+        <field name="emplPositionId" type="id" is-pk="true"/>
+        <field name="partyId" type="id" is-pk="true"/>
+        <field name="roleTypeId" type="id" is-pk="true"/>
+        <field name="fromDate" type="date-time" is-pk="true"/>
+        <field name="thruDate" type="date-time"/>
+        <field name="comments" type="text-medium"/>
+        <relationship type="one" related-entity-name="EmplPosition"/>
+        <relationship type="one" related-entity-name="Party"/>
+        <relationship type="one" related-entity-name="RoleType"/>
+    </entity>

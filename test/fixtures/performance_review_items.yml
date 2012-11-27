@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  performance_review_id: 1
+  performance_review_item_seq_id: 1
+  review_item_type_enum_id: 1
+  review_rating_enum_id: 1
+  comments: MyText
+
+two:
+  performance_review_id: 1
+  performance_review_item_seq_id: 1
+  review_item_type_enum_id: 1
+  review_rating_enum_id: 1
+  comments: MyText
